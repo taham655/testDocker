@@ -11,6 +11,8 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
+    volumes:  # Recommended for data persistence
+      - postgres_data:/var/lib/postgresql/data
 
   backend:
     build:
