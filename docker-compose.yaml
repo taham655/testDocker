@@ -38,3 +38,5 @@ services:
       - "5555:5555"
     environment:
       - NODE_ENV=production
+volumes:
+  postgres_data:
